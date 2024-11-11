@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Perfil do Usuário</h1>
+        </div>
+        
+    </header>
+    <main id="mainP">
+        <div class="profile">
+            <h2>Informações do Perfil</h2>
+            <p> <span class="negrito">Nome:</span> <span id="nomePerfil"></span></p>
+            <p> <span class="negrito">Email:</span> <span id="emailPerfil"></span></p>
+            <p> <span class="negrito">Telefone:</span><span id="telefonePerfil"></span></p>
+            <p> <span class="negrito">CPF:</span> <span id="cpfPerfil"></span></p>
+            <p> <span class="negrito">Senha:</span> <span id="senhaPerfil"></span></p>
+        </div>
+    </main>
+    
+
+    <script>
+       addEventListener("DOMContentLoaded", () => {
+            var Rnome = localStorage.getItem("nome");
+            var Remail = localStorage.getItem("email");
+            var Rtel = localStorage.getItem("telefone");
+            var Rcpf = localStorage.getItem("cpf");
+            var Rsenha = localStorage.getItem("senha");
+
+            document.getElementById("nomePerfil").innerHTML = Rnome;
+            document.getElementById("emailPerfil").innerHTML = Remail;
+            document.getElementById("telefonePerfil").innerHTML = Rtel;
+            document.getElementById("cpfPerfil").innerHTML = Rcpf;
+            document.getElementById("senhaPerfil").innerHTML = Rsenha;
+        })
+    </script>
+</body>
+</html>

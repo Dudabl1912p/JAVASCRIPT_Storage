@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+}
+
+#logo{
+    grid-column: 2; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#bt{
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.modal.show{
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 450px;
+}
+
+#Headermodal{
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+}
+
+.close {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+#mainP{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.profile{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
